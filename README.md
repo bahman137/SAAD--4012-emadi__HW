@@ -29,9 +29,9 @@ What happens when you create a new branch? Well, doing so creates a new pointer 
 ##۸- دستور git remote add چه کاری انجام میدهد و چه کاربردی دارد؟
 
 
-##۹- دستور git push چه کاری انجام میدهد؟
+## 9- دستور git push چه کاری انجام میدهد؟
 When you want to share a branch with the world, you need to push it up to a remote to which you have write access. Your local branches aren’t automatically synchronized to the remotes you write to — you have to explicitly push the branches you want to share. That way, you can use private branches for work you don’t want to share, and push up only the topic branches you want to collaborate on.
-##۱۰- دستور git pull چه کاری انجام میدهد و برای چه استفاده میشود؟
+##10- دستور git pull چه کاری انجام میدهد و برای چه استفاده میشود؟
 While the git fetch command will fetch all the changes on the server that you don’t have yet, it will not modify your working directory at all. It will simply get the data for you and let you merge it yourself. However, there is a command called git pull which is essentially a git fetch immediately followed by a git merge in most cases. If you have a tracking branch set up as demonstrated in the last section, either by explicitly setting it or by having it created for you by the clone or checkout commands, git pull will look up what server and branch your current branch is tracking, fetch from that server and then try to merge in that remote branch.
-##۱۱- دستور git clone چه کاری انجام میدهد و برای چه استفاده میشود؟
+##11- دستور git clone چه کاری انجام میدهد و برای چه استفاده میشود؟
 If you want to get a copy of an existing Git repository — for example, a project you’d like to contribute to — the command you need is git clone. If you’re familiar with other VCSs such as Subversion, you’ll notice that the command is "clone" and not "checkout". This is an important distinction — instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the history of the project is pulled down by default when you run git clone
